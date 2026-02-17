@@ -1,0 +1,91 @@
+.pageWrap{
+  max-width:1100px;
+  margin:0 auto;
+  padding:24px;
+  color:var(--text);
+}
+
+.pageHeader{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  margin-bottom:18px;
+}
+
+.pageTitle{
+  margin:0;
+  font-size:28px;
+  font-weight:900;
+  letter-spacing:-.5px;
+}
+
+.pageSub{
+  opacity:.75;
+  font-weight:600;
+}
+
+/* ---------- Insights Card ("Where I'm losing" + "How to improve") ---------- */
+.insCard{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:16px;
+  box-shadow:var(--shadow);
+}
+
+.insHead{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.insTitle{
+  font-size:16px;
+  font-weight:900;
+  letter-spacing:.2px;
+}
+
+.insSub{
+  margin-top:4px;
+  opacity:.75;
+  font-weight:700;
+}
+
+.insBadge{
+  font-size:12px;
+  font-weight:900;
+  padding:6px 10px;
+  border-radius:999px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  white-space:nowrap;
+}
+
+.insGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.insColTitle{
+  font-weight:900;
+  margin-bottom:8px;
+  opacity:.9;
+}
+
+.insList{
+  margin:0;
+  padding-left:18px;
+  opacity:.9;
+  line-height:1.35;
+}
+
+.insList li{ margin:6px 0; }
+
+.insMuted{ opacity:.7; font-weight:700; }
+
+@media (max-width:900px){
+  .insGrid{ grid-template-columns:1fr; }
+}

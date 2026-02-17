@@ -1,0 +1,105 @@
+.topbar{
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  height: 64px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 0 18px;
+  background: rgba(11,15,26,.72);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.topbarLeft{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+}
+
+.topbarLogo{
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: #111827;
+  box-shadow: 0 12px 24px rgba(0,0,0,.28);
+  position: relative;
+}
+
+.topbarLogo::after{
+  content:"";
+  position:absolute;
+  inset: 12px;
+  border-radius: 999px;
+  background:#b91c1c;
+  box-shadow: 0 0 0 6px rgba(185,28,28,.18);
+}
+
+.topbarText{ line-height: 1.1; }
+.topbarBrand{
+  color:#fff;
+  font-weight: 950;
+  letter-spacing: -.02em;
+  font-size: 14px;
+}
+.topbarSub{
+  margin-top: 2px;
+  color: rgba(255,255,255,.70);
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.topbarRight{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+}
+
+.topbarPill{
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(255,255,255,.86);
+  border: 1px solid rgba(255,255,255,.14);
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.06);
+}
+
+.menu-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.menu-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* ✅ active page highlight */
+.menu-link.isActive .menu-btn {
+  background: white;
+  color: black;
+}
+
+.logout-btn{
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.22);
+  color: rgba(255,255,255,.92);
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 900;
+  transition: .2s;
+  margin-left: 6px;
+}
+
+.logout-btn:hover{
+  background: rgba(255,255,255,.12);
+}

@@ -1,0 +1,163 @@
+/* Weekly – SaaS Dark (paleta unificada) */
+
+.weeklyPremium{ color: var(--text); }
+
+.wHeader{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:14px;
+}
+
+.wTitleRow{ display:flex; align-items:center; gap:10px; }
+
+.wTitle{
+  margin:0;
+  font-size:28px;
+  letter-spacing:-0.02em;
+  line-height:1.1;
+  color: var(--text);
+}
+
+.wSub{
+  margin-top:6px;
+  color: rgba(255,255,255,.72);
+  font-weight:750;
+}
+
+.wSubDot{ margin:0 8px; opacity:.55; }
+
+.wHeaderRight{ display:flex; align-items:center; gap:10px; }
+.wLoading{ color: rgba(255,255,255,.70); font-weight:850; }
+
+/* Tag */
+.wTag{
+  padding:7px 11px;
+  border-radius:999px;
+  font-weight:950;
+  font-size:12px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.82);
+}
+.wTag.good{ border-color: rgba(34,197,94,.35); color: rgba(34,197,94,.95); }
+.wTag.bad{ border-color: rgba(239,68,68,.35); color: rgba(239,68,68,.95); }
+.wTag.neutral{ border-color: rgba(255,255,255,.16); color: rgba(255,255,255,.82); }
+
+/* Base Card */
+.wCard{
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--card);
+  box-shadow: var(--shadow);
+  padding: 14px;
+}
+
+/* Controls */
+.wControls{ display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+
+.wLabelSmall{
+  font-size:12px;
+  color: rgba(255,255,255,.70);
+  font-weight:850;
+  margin-bottom:6px;
+}
+
+.wDate{
+  padding:10px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+  font-weight:800;
+}
+
+.wChip{
+  padding:10px 12px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.04);
+  color: rgba(255,255,255,.84);
+  font-weight:850;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.wGood{ color: rgba(34,197,94,.95); }
+.wBad{ color: rgba(239,68,68,.95); }
+
+.wPill{
+  padding:4px 10px;
+  border-radius:999px;
+  font-weight:950;
+  font-size:12px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.05);
+}
+.wPill.good{ border-color: rgba(34,197,94,.30); color: rgba(34,197,94,.95); }
+.wPill.bad{ border-color: rgba(239,68,68,.30); color: rgba(239,68,68,.95); }
+.wPill.neutral{ border-color: rgba(255,255,255,.16); color: rgba(255,255,255,.82); }
+
+/* KPI grid */
+.wKpiGrid{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin-top:14px; }
+@media (max-width:1100px){ .wKpiGrid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+
+.wKpiLabel{ color: rgba(255,255,255,.70); font-weight:950; margin-bottom:10px; }
+.wKpiValue{ font-size:22px; font-weight:950; letter-spacing:-0.02em; color: var(--text); }
+.wKpiHint{ margin-top:8px; color: rgba(255,255,255,.62); font-weight:850; font-size:13px; }
+
+/* 2 columns layout */
+.wGrid2{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px; }
+@media (max-width:1050px){ .wGrid2{ grid-template-columns:1fr; } }
+
+.wCardTitle{ font-weight:950; color: var(--text); margin-bottom:6px; }
+.wMuted{ color: rgba(255,255,255,.70); font-weight:800; margin-bottom:10px; }
+
+/* Mini chart */
+.wMiniChart{ display:flex; align-items:flex-end; gap:10px; margin-top:8px; padding-top:10px; }
+.wMiniCol{ display:flex; flex-direction:column; align-items:center; gap:8px; width:100%; }
+.wMiniBar{ width:100%; max-width:34px; border-radius:10px; background: rgba(255,255,255,.18); }
+.wMiniLabel{ font-weight:900; font-size:12px; color: rgba(255,255,255,.70); }
+
+/* Insights */
+.wInsight{
+  display:grid;
+  gap:6px;
+  padding:10px 12px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.04);
+  margin-top:10px;
+}
+.wInsightLabel{ font-weight:950; color: rgba(255,255,255,.70); }
+.wInsightValue{ font-weight:850; color: rgba(255,255,255,.90); }
+
+/* Bar rows */
+.wList{ display:grid; gap:10px; }
+.wRow{ display:grid; gap:6px; }
+.wRowTop{ display:flex; justify-content:space-between; gap:10px; font-weight:900; }
+.wRowLabel{ color: rgba(255,255,255,.78); }
+.wRowVal{ color: rgba(255,255,255,.92); font-weight:950; }
+
+.wTrack{ width:100%; height:10px; border-radius:999px; background: rgba(255,255,255,.10); overflow:hidden; }
+.wFill{ height:100%; border-radius:999px; background: rgba(59,130,246,.55); }
+
+/* Clickable mini chart columns */
+.wMiniColBtn{
+  appearance:none;
+  border:0;
+  background:transparent;
+  padding:0;
+  margin:0;
+  cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+}
+
+.wMiniColBtn:focus{ outline:2px solid rgba(59,130,246,.55); outline-offset:6px; border-radius:12px; }
+.wMiniColBtn.active .wMiniBar{ box-shadow: 0 0 0 2px rgba(59,130,246,.45) inset; }
+
+.wHintTiny{ margin-top:10px; font-size:12px; color: rgba(255,255,255,.65); }
